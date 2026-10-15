@@ -7,22 +7,15 @@ Pilot şu an **davetlidir**. Davet kodunuz yoksa kurulum yapılır ama giriş a�
 
 ## Kurulum
 
-Aşağıdaki metni Claude Code'a yapıştırın. Komutları o çalıştırır, siz onay verirsiniz:
+Aşağıdaki satırı Claude Code'a yapıştırıp Enter'a basın. Başındaki `!` işareti satırı komut olarak çalıştırır
+(terminalde çalıştırmak isterseniz `!` olmadan yapıştırın):
 
 ```
-Resmen kurulumunu yap. Yalnızca şu üç komutu sırayla çalıştır, başka hiçbir dosyayı değiştirme:
-
-claude plugin marketplace add OzayArtunBoran/resmen --scope user
-claude plugin install hukuk@resmen --scope user
-claude mcp add --transport http --scope user hukuk https://mcp.resmen.com.tr/mcp
-
-Üçü de başarılıysa bana tam olarak şunu söyle:
-"Kurulum tamam. Claude Code'u kapatıp yeniden açın, /mcp yazın, listeden 'hukuk'u seçin ve açılan sayfaya davet kodunuzu girin."
-
-Bir komut hata verirse hatayı olduğu gibi göster, kendi başına başka bir yol deneme.
+! claude plugin marketplace add OzayArtunBoran/resmen --scope user && claude plugin install hukuk@resmen --scope user && claude mcp add --transport http --scope user hukuk https://mcp.resmen.com.tr/mcp
 ```
 
-Sonra Claude Code'u yeniden açın, `/mcp` yazın, `hukuk`'u seçin ve tarayıcıda açılan sayfaya davet kodunuzu girin.
+Sonra Claude Code'u kapatıp yeniden açın, `/mcp` yazın, `hukuk`'u seçin ve tarayıcıda açılan sayfaya davet kodunuzu
+girin.
 
 ## Eklentide ne var
 
